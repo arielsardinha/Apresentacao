@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="js.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,22 +18,22 @@
                 <legend>Dados Pessoais</legend>
                 <div class="caixa_dados_p">
                     <label for="nome_nome">Nome</label>
-                    <input type="text" id="nome_nome">
+                    <input type="text" id="nome_nome" required>
                     <br>
                     <label for="data">Data de Nascimento</label>  
-                    <input type="date" id="data">
+                    <input type="date" id="data" required>
                     <br>
                     <label for="nome_mae">Nome da Mae</label>
-                    <input type="text" id="nome_mae">
+                    <input type="text" id="nome_mae" required>
                     <br>
                     <label for="nome_pai">Nome do Pai</label>
-                    <input type="text" id="nome_pai">
+                    <input type="text" id="nome_pai" required>
                     <br>
                     <label for="numero_telefone">Numero do Telefone</label>
-                    <input type="tel">
+                    <input type="tel" required>
                     <br>
                     <label for="email_txt">Email</label>
-                    <input type="email" id="email_txt">
+                    <input type="email" id="email_txt" required>
                 </div>
             </fieldset>
         </form>
