@@ -1,116 +1,61 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<!-- sempre trabalhe com pt-br, pq o seu site fala portugues
+        isso evita que o navegador tente traduzir uma palavra nativa 
+        que pode gerar erro no texto por traduzir errado algo que era nativo
+     -->
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script src="js.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
 </head>
 <body>
-    <header>
-        <h1>Escola Virtual</h1>
-    </header>
-    <section>
-        <form action="" method="GET" id="form">
-            <fieldset>
-                <legend>Dados Pessoais</legend>
-                <div class="caixa_dados_p">
-                    <label for="nome_nome">Nome</label>
-                    <input type="text" id="nome_nome" required>
-                    <br>
-                    <label for="data">Data de Nascimento</label>  
-                    <input type="date" id="data" required>
-                    <br>
-                    <label for="nome_mae">Nome da Mae</label>
-                    <input type="text" id="nome_mae" required>
-                    <br>
-                    <label for="nome_pai">Nome do Pai</label>
-                    <input type="text" id="nome_pai" required>
-                    <br>
-                    <label for="numero_telefone">Numero do Telefone</label>
-                    <input type="tel" required>
-                    <br>
-                    <label for="email_txt">Email</label>
-                    <input type="email" id="email_txt" required>
-                </div>
-            </fieldset>
-        </form>
-
-        <fieldset form="form" class="field_matricula" id="form_2">
-            <legend>informações de matricula</legend>
-            <div class="caixa_serie">
-                <label for="ensino">Serie</label>
-                <select name="" id="ensino">
-                    <optgroup label="Fundamental">
-                        <option value="">Primeira</option>
-                        <option value="">Segunda</option>
-                        <option value="">Terceira</option>
-                        <option value="">Quarta</option>
-                        <option value="">Quinta</option>
-                        <option value="">Sexta</option>
-                        <option value="">Setima</option>
-                        <option value="">Oitava</option>
-                        <option value="">Nona</option>
-                    </optgroup>
-                    <optgroup label="Medio">
-                        <option value="">Primeiro</option>
-                        <option value="">Segundo</option>
-                        <option value="">Terceiro</option>
-                    </optgroup>
-                    <optgroup label="Superior">
-                        <option value="">Superior</option>
-                        <option value="">Mestrado</option>
-                        <option value="">Doutorado</option>
-                    </optgroup>
-                </select>
-            </div>
-            <div class="caixa_turno">
-                <p>Turno</p>
-                <input type="radio" name="turno" id="manha"> 
-                <label for="manha">Manha</label><br>
-                <input type="radio" name="turno" id="tarde">              
-                <label for="tarde">Tarde</label>
-                                
-            </div>
-            <div class="caixa_atividades">
-                <p>Atividades Educacionais</p>
-                <div class="caixa_atividades_input">
-                    <div>
-                        <input type="checkbox" name="" id="informatica">
-                        <label for="informatica">informatica</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="" id="matematica">
-                        <label for="matematica">Matematica</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="" id="portugues">
-                        <label for="portugues">Portugues</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="" id="ciencias">
-                        <label for="ciencias">ciencias</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="" id="pintura">
-                        <label for="pintura">Pintura</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="" id="esporte">
-                        <label for="esporte">Esporte</label>
-                    </div>
+  <main>
+        <!-- aside é uma tag semantica que fala sobre um assunto em comum -->
+        <aside>
+            <div class="caixa-txt">
+                <h1>
+                    Get <span>insights</span> that help your business grow.
+                </h1>
+                <p>
+                    Discover the benefits of data analytics and make better
+                    decisions regarding revenue, customer
+                    experience, and overall efficiency.
+                </p>
+                <div class="caixa-txt-2">  
+                    <div><h2>10k+</h2><p class="feature">COMPANIES</p></div>
+                    <div><h2>314</h2><p class="feature">TEMPLATES</p></div>
+                    <div><h2>12M+</h2><p class="feature">QUERIES</p></div>
                 </div>
             </div>
-        </fieldset>
-        <div class="caixa_input_submit_limpar">
-            <input form="form" type="submit" value="Enviar Formulario">
-            <input form="form" type="reset" value="Limpar Formulario">
-        </div>
-    </section>
-    <footer>
-
-    </footer>
+        </aside>
+    </main>
+    <!-- figcaption é uma tag semantica que diz aos navegadores que é uma 
+            imagem importante e da pra utilizar como uma div -->
+    <figcaption>
+      <img class = "desktop" src="imagem/image-header-desktop.jpg" alt="three womans working at office">
+      <img class = "mobile" src="imagem/image-header-mobile.jpg" alt="three womans working at office">
+    </figcaption>
+  
 </body>
 </html>
+
+<!-- 
+
+Get insights that help your business grow.
+
+  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.
+
+  10k+ companies
+  314 templates
+  12m+ queries
+
+-->
